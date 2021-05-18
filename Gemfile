@@ -17,7 +17,7 @@ gem 'oj'
 gem 'statsd-instrument'
 # gem 'airbrake'
 gem 'whenever', :require => false
-gem 'nokogiri', :require => false
+gem 'nokogiri', '>= 1.11.4', :require => false
 gem "ruby-progressbar", :require => false
 gem 'text', git: 'git://github.com/threedaymonk/text.git'
 gem 'rubyzip', :require => false
@@ -48,7 +48,7 @@ group :development do
   gem 'oauth',   :require => false
   gem 'oauth2',  :require => false
   gem 'signet',  :require => false
-  gem 'aws-sdk', :require => false
+  gem 'aws-sdk', '>= 1.50.0', :require => false
 end
 
 group :assets do
