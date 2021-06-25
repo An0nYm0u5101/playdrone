@@ -1,6 +1,6 @@
 source 'https://rubygems.org/'
 
-gem 'rails'
+gem 'rails', '>= 4.0.0'
 gem 'redis'
 # gem 'hiredis', :git => 'git://github.com/nviennot/hiredis-rb.git'
 gem 'sidekiq'
