@@ -47,7 +47,7 @@ group :development do
   # token validation
   gem 'oauth',   :require => false
   gem 'oauth2',  :require => false
-  gem 'signet',  :require => false
+  gem 'signet', '>= 0.4.5', :require => false
   gem 'aws-sdk', :require => false
 end
 
