@@ -17,7 +17,7 @@ gem 'oj'
 gem 'statsd-instrument'
 # gem 'airbrake'
 gem 'whenever', :require => false
-gem 'nokogiri', :require => false
+gem 'nokogiri', '>= 1.13.6', :require => false
 gem "ruby-progressbar", :require => false
 gem 'text', git: 'git://github.com/threedaymonk/text.git'
 gem 'rubyzip', :require => false
