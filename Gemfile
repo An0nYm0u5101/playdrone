@@ -46,13 +46,13 @@ group :development do
 
   # token validation
   gem 'oauth',   :require => false
-  gem 'oauth2',  :require => false
+  gem 'oauth2', '>= 1.4.11', :require => false
   gem 'signet',  :require => false
   gem 'aws-sdk', :require => false
 end
 
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3', :require => false
-  gem 'coffee-rails', '~> 3.2.1', :require => false
+  gem 'sass-rails', '~> 3.2.5', :require => false
+  gem 'coffee-rails', '~> 3.2.2', :require => false
   gem 'uglifier',     '>= 1.0.3', :require => false
 end
