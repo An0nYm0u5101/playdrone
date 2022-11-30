@@ -32,7 +32,7 @@ gem 'jquery-rails'
 gem 'therubyracer'
 gem 'less-rails'
 gem 'twitter-bootstrap-rails', git: 'https://github.com/seyhunak/twitter-bootstrap-rails.git'
-gem 'sinatra', :require => false
+gem 'sinatra', '>= 2.2.3', :require => false
 gem 'coderay'
 # Front end only
 
