@@ -1,6 +1,6 @@
 source 'https://rubygems.org/'
 
-gem 'rails'
+gem 'rails', '>= 6.1.7.3'
 gem 'redis'
 # gem 'hiredis', :git => 'git://github.com/nviennot/hiredis-rb.git'
 gem 'sidekiq'
@@ -27,8 +27,8 @@ gem 's3', :require => false
 gem 'unicorn', :require => false
 gem 'slim'
 gem 'will_paginate'
-gem 'haml-rails'
-gem 'jquery-rails'
+gem 'haml-rails', '>= 0.5.3'
+gem 'jquery-rails', '>= 4.0.1'
 gem 'therubyracer'
 gem 'less-rails'
 gem 'twitter-bootstrap-rails', git: 'https://github.com/seyhunak/twitter-bootstrap-rails.git'
@@ -52,7 +52,7 @@ group :development do
 end
 
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3', :require => false
-  gem 'coffee-rails', '~> 3.2.1', :require => false
+  gem 'sass-rails', '~> 5.0.8', :require => false
+  gem 'coffee-rails', '~> 4.2.2', :require => false
   gem 'uglifier',     '>= 1.0.3', :require => false
 end
