@@ -1,6 +1,6 @@
 source 'https://rubygems.org/'
 
-gem 'rails'
+gem 'rails', '>= 6.1.7.9'
 gem 'redis'
 # gem 'hiredis', :git => 'git://github.com/nviennot/hiredis-rb.git'
 gem 'sidekiq'
@@ -52,7 +52,7 @@ group :development do
 end
 
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3', :require => false
+  gem 'sass-rails', '~> 6.0.0', :require => false
   gem 'coffee-rails', '~> 3.2.1', :require => false
   gem 'uglifier',     '>= 1.0.3', :require => false
 end
