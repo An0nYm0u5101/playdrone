@@ -1,6 +1,6 @@
 source 'https://rubygems.org/'
 
-gem 'rails'
+gem 'rails', '>= 7.1.0'
 gem 'redis'
 # gem 'hiredis', :git => 'git://github.com/nviennot/hiredis-rb.git'
 gem 'sidekiq'
@@ -27,12 +27,12 @@ gem 's3', :require => false
 gem 'unicorn', :require => false
 gem 'slim'
 gem 'will_paginate'
-gem 'haml-rails'
-gem 'jquery-rails'
+gem 'haml-rails', '>= 1.0.0'
+gem 'jquery-rails', '>= 4.0.1'
 gem 'therubyracer'
-gem 'less-rails'
+gem 'less-rails', '>= 2.6.0'
 gem 'twitter-bootstrap-rails', git: 'https://github.com/seyhunak/twitter-bootstrap-rails.git'
-gem 'sinatra', :require => false
+gem 'sinatra', '>= 2.0.0', :require => false
 gem 'coderay'
 # Front end only
 
@@ -41,18 +41,18 @@ group :development do
   gem 'capistrano',        :require => false
   gem 'capistrano_colors', :require => false
   gem 'rvm-capistrano',    :require => false
-  gem 'guard-livereload',  :require => false
+  gem 'guard-livereload', '>= 2.3.1', :require => false
   #gem 'gsl', :require => false
 
   # token validation
   gem 'oauth',   :require => false
-  gem 'oauth2',  :require => false
+  gem 'oauth2', '>= 1.4.11', :require => false
   gem 'signet',  :require => false
-  gem 'aws-sdk', :require => false
+  gem 'aws-sdk', '>= 1.52.0', :require => false
 end
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3', :require => false
-  gem 'coffee-rails', '~> 3.2.1', :require => false
+  gem 'coffee-rails', '~> 4.2.2', :require => false
   gem 'uglifier',     '>= 1.0.3', :require => false
 end
