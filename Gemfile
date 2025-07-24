@@ -1,6 +1,6 @@
 source 'https://rubygems.org/'
 
-gem 'rails'
+gem 'rails', '>= 3.2.20'
 gem 'redis'
 # gem 'hiredis', :git => 'git://github.com/nviennot/hiredis-rb.git'
 gem 'sidekiq'
@@ -17,7 +17,7 @@ gem 'oj'
 gem 'statsd-instrument'
 # gem 'airbrake'
 gem 'whenever', :require => false
-gem 'nokogiri', :require => false
+gem 'nokogiri', '>= 1.18.9', :require => false
 gem "ruby-progressbar", :require => false
 gem 'text', git: 'git://github.com/threedaymonk/text.git'
 gem 'rubyzip', :require => false
@@ -27,8 +27,8 @@ gem 's3', :require => false
 gem 'unicorn', :require => false
 gem 'slim'
 gem 'will_paginate'
-gem 'haml-rails'
-gem 'jquery-rails'
+gem 'haml-rails', '>= 0.5.1'
+gem 'jquery-rails', '>= 3.1.2'
 gem 'therubyracer'
 gem 'less-rails'
 gem 'twitter-bootstrap-rails', git: 'https://github.com/seyhunak/twitter-bootstrap-rails.git'
@@ -37,11 +37,11 @@ gem 'coderay'
 # Front end only
 
 group :development do
-  gem 'foreman',           :require => false
+  gem 'foreman', '>= 0.86.0', :require => false
   gem 'capistrano',        :require => false
   gem 'capistrano_colors', :require => false
   gem 'rvm-capistrano',    :require => false
-  gem 'guard-livereload',  :require => false
+  gem 'guard-livereload', '>= 2.3.1', :require => false
   #gem 'gsl', :require => false
 
   # token validation
@@ -52,7 +52,7 @@ group :development do
 end
 
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3', :require => false
-  gem 'coffee-rails', '~> 3.2.1', :require => false
+  gem 'sass-rails', '~> 3.2.6', :require => false
+  gem 'coffee-rails', '~> 4.0.0', :require => false
   gem 'uglifier',     '>= 1.0.3', :require => false
 end
