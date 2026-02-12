@@ -4,7 +4,7 @@ gem 'rails'
 gem 'redis'
 # gem 'hiredis', :git => 'git://github.com/nviennot/hiredis-rb.git'
 gem 'sidekiq'
-gem 'faraday', '~> 0.8.7'
+gem 'faraday', '~> 2.14.1'
 gem 'faraday_middleware'
 gem 'net-http-persistent'
 gem 'protobuf', git: 'git://github.com/nviennot/protobuf.git', :branch => 'dev'
@@ -46,8 +46,8 @@ group :development do
 
   # token validation
   gem 'oauth',   :require => false
-  gem 'oauth2',  :require => false
-  gem 'signet',  :require => false
+  gem 'oauth2', '>= 1.4.8', :require => false
+  gem 'signet', '>= 0.5.0', :require => false
   gem 'aws-sdk', :require => false
 end
 
